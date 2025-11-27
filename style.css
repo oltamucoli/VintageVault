@@ -3,3 +3,27 @@ body {
     font-family: Arial, sans-serif;
     background: #fff;
 }
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    font-family:Noto Serif;
+    
+}
+
+.navbar a {
+    color: #000;
+    text-decoration: none;
+}
