@@ -160,3 +160,54 @@ body {
 .grid img {
     width: 100%;
 }
+/* BANNER SECTION */
+.our-banner {
+    margin-top: 100px;
+    background-color: #3e312a;
+    padding: 60px 0;
+    width: 100%;
+}
+
+.banner-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+
+.banner-content .title{
+    letter-spacing: 5px;
+    font-size: 28px;
+    margin-bottom: 50px;
+    font-family: "Noto Serif", serif;
+}
+
+.collection-grid {
+    display: flex;
+    justify-content:center;
+    gap: 0px;
+}
+
+.collection-card {
+    width: 23%;
+}
+
+.collection-card img {
+    height: 200px;
+    width: 250px;
+    margin-bottom: 15px;
+}
+
+.collection-card h4 {
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    opacity: 0.8;
+    font-family: "Noto Serif", serif;
+}
+
+.collection-card p {
+    font-size: 18px;
+    font-family: "Noto Serif", serif;
+    margin-top: 5px;
+}
