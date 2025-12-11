@@ -64,6 +64,8 @@ body {
     color: #000;
     text-decoration: none;
 }
+
+
 /* ICON CATEGORY ROW */
 .categories {
     position:relative;
@@ -107,4 +109,54 @@ body {
     border-radius: 3px;
     font-family: 'Noto Serif', serif;
     color:#2c241e
+}
+
+/* POPULAR PRODUCTS*/
+.products .title{
+    margin-top: 100px;
+    font-size: 25px;
+    font-family: 'Noto Serif', serif;
+    margin-bottom: 15px;
+    text-align: center;
+    color: black;
+    letter-spacing: 5px;
+}
+
+.products .view{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #777777;
+    font-family: 'Noto Serif', serif;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.products .grid {
+    display: flex;
+    justify-content: center;
+    gap: 60px;          
+    flex-wrap: wrap;
+}
+
+.products .item {
+    text-align: center;
+}
+
+.products .item img {
+    width: 150px;       
+    height: 150px;
+    object-fit: contain;   
+    display: block;
+    margin: 0 auto;
+}
+
+.products .item p {
+    margin-top: 12px;
+    font-size: 18px;
+    font-family: 'Noto Serif', serif;
+}
+
+.grid img {
+    width: 100%;
 }
