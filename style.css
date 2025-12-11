@@ -64,3 +64,47 @@ body {
     color: #000;
     text-decoration: none;
 }
+/* ICON CATEGORY ROW */
+.categories {
+    position:relative;
+    text-decoration: none;
+    color: #000;
+    padding-bottom: 3px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px 0;
+    font-family: 'Noto Serif', serif;
+    cursor: pointer;
+    font-size: 15px;
+}
+.categories div {
+    border-bottom: 2px solid transparent; 
+}
+
+.categories div:hover {
+    border-bottom: 2px solid #000; 
+}
+
+
+/* HERO SECTION */
+.hero {
+    background: url(hero.img.png) center/cover;
+    color: white;
+    padding: 80px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Elegant Sans;
+}
+
+.hero button {
+    margin-top: 20px;
+    padding: 10px 25px;
+    background:#f5eddc;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    font-family: 'Noto Serif', serif;
+    color:#2c241e
+}
