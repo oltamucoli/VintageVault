@@ -287,3 +287,110 @@ h1 {
    margin-left: 10px;
   font-size: 15px;
 }
+
+
+/* FOOTER SECTION */
+footer {
+    margin-bottom: 100px;
+    background: #ffffff;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.top-icons {
+    margin-top: 200px;
+    background: #231d1a;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    text-align: center;
+    font-family: Noto Serif;
+}
+
+.icon-box img {
+    width: 23px;
+    margin-bottom: 10px;
+}
+
+.icon-box h4 {
+    font-size: 13px;
+    margin: 5px 0;
+}
+
+.icon-box p {
+    font-size: 12px;
+}
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-left .title {
+    margin-top: 60px;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #000000;
+    font-family: Noto Serif;
+}
+
+.footer-left p {
+    color: black;
+    margin-bottom: 25px;
+    line-height: 1.5;
+    font-family: Noto Serif;
+}
+
+.email-box {
+    display: flex;
+    border-bottom: 1px solid #555;
+    width: 230px;
+}
+
+.email-box input {
+    font-family: Noto Serif;
+    flex: 1;
+    padding: 8px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #000000;
+}
+
+.email-box button {
+    background: none;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.footer-help h3,
+.footer-explore h3,
+.footer-trust h3{
+    margin-top: 60px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    color: #000000;
+    font-family: Noto Serif;
+}
+
+.footer-help a,
+.footer-explore a,
+.footer-trust a {
+    margin-right: 70px;
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-family: Noto Serif;
+}
+
+.footer-help a:hover,
+.footer-explore a:hover,
+.footer-trust a:hover {
+    text-decoration: underline;
+}
