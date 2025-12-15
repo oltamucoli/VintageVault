@@ -1,0 +1,258 @@
+body {
+    margin: 0;
+    font-family: Noto Serif, serif;
+    background: #fff;
+}
+
+/* NAVIGATION BAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.search-wrapper {
+    width: 450px; 
+    height: 35px;
+    background: #f5f5f5;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    border: 1px solid #f5f5f5;
+}
+
+.search-wrapper input {
+    flex: 1;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 10px;
+    font-family: 'Noto Serif', serif;
+    padding-left: 10px;
+}
+
+.search-wrapper .search-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.search-wrapper .search-btn img {
+    width: 22px;
+    height: 22px;
+}
+
+
+.logo img {
+    height: 50px; 
+}
+
+.navbar ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    font-family:Noto Serif;
+}
+
+.navbar a {
+    color: #000;
+    text-decoration: none;
+}
+
+
+/* ICON CATEGORY ROW */
+.categories {
+    position:relative;
+    text-decoration: none;
+    color: #000;
+    padding-bottom: 3px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px 0;
+    font-family: 'Noto Serif', serif;
+    cursor: pointer;
+    font-size: 15px;
+}
+.categories div {
+    border-bottom: 2px solid transparent; 
+}
+
+.categories div:hover {
+    border-bottom: 2px solid #000; 
+}
+
+
+
+/* ABOUT US SECTION */
+.about {
+    padding: 60px;
+}
+
+.about-container {
+    background: rgb(230, 222, 213);
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-image img {
+    width: 520px;
+    background: rgb(186, 173, 160);
+    padding: 10px;
+}
+
+.about-text h1 {
+    font-size: 37px;
+    letter-spacing: 4px;
+    margin-bottom: 70px;
+}
+
+.about-text h2 {
+    letter-spacing: 2px;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 17px;
+    margin-left: 2px;
+    max-width: 500px;
+    line-height: 1.6;
+}
+
+.stats {
+    border: #eee 1px solid;
+    display: flex;
+    justify-content: space-around;
+    background: #fff;
+    padding: 40px 20px;
+    margin-top: 40px;
+    
+}
+
+.stat h3 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.stat p {
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+
+
+/* FOOTER SECTION */
+footer {
+    margin-bottom: 100px;
+    background: #ffffff;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.top-icons {
+    margin-top: 200px;
+    background: #231d1a;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    text-align: center;
+    font-family: Noto Serif;
+}
+
+.icon-box img {
+    width: 23px;
+    margin-bottom: 10px;
+}
+
+.icon-box h4 {
+    font-size: 13px;
+    margin: 5px 0;
+}
+
+.icon-box p {
+    font-size: 12px;
+}
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-left .title {
+    margin-top: 60px;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #000000;
+    font-family: Noto Serif;
+}
+
+.footer-left p {
+    color: black;
+    margin-bottom: 25px;
+    line-height: 1.5;
+    font-family: Noto Serif;
+}
+
+.email-box {
+    display: flex;
+    border-bottom: 1px solid #555;
+    width: 230px;
+}
+
+.email-box input {
+    font-family: Noto Serif;
+    flex: 1;
+    padding: 8px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #000000;
+}
+
+.email-box button {
+    background: none;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.footer-help h3,
+.footer-explore h3,
+.footer-trust h3{
+    margin-top: 60px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    color: #000000;
+    font-family: Noto Serif;
+}
+
+.footer-help a,
+.footer-explore a,
+.footer-trust a {
+    margin-right: 70px;
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-family: Noto Serif;
+}
+
+.footer-help a:hover,
+.footer-explore a:hover,
+.footer-trust a:hover {
+    text-decoration: underline;
+}
