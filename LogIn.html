@@ -10,21 +10,26 @@
 
 <div class="wrapper">
     <div class="left">
-        <p class="top-text">Not a member? <a href="#">Register</a></p>
+        <p class="top-text">Not a member? <a href="#" id="register-link">Register</a></p>
 
         <h1>Login</h1>
 
         <form>
-            <input type="email" placeholder="Email Address">
-            <input type="password" placeholder="Password">
+            <input type="email" id="login-email" placeholder="Email Address">
+            <input type="password" id="login-pass" placeholder="Password">
+            
 
-            <label class="terms">
-                <input type="checkbox">
+             <label class="terms">
+                <input type="checkbox" id="login-terms">
                 I agree to all the statements included in the terms of service
             </label>
 
-            <button>Login</button>
+            <button id="login-btn">Login</button>
         </form>
+        
+        <script src="loginscript.js"></script>
+        <script src="validimiLogIn.js"></script>
+
 
         <div class="divider">Or</div>
 

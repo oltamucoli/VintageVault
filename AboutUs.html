@@ -20,14 +20,18 @@
     </button>
     </div>
         <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Contact us</a></li>
+        <li><a href="#" id="home">Home</a></li>
+        <li><a href="#" id="about">Contact us</a></li>
         <li><a href="#">Favorites</a></li>
-        <li><a href="#">Shopping cart</a></li>
+        <li><a href="#" id="cart">Shopping cart</a></li>
         <li><a href="#">Log in</a></li>
     </ul>
 </nav>
-    </nav> 
+ <script src="script.js"></script>
+<script src="contactscript.js"></script>
+<script src="cartscript.js"></script>
+
+
         <!-- ICON CATEGORY ROW -->
     <section class="categories">
         <div>Vases</div>
@@ -92,15 +96,15 @@
     <div class="left">
         <h1> CONTACT US </h1>
         <form>
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Email">
-            <input type="text" placeholder="Phone">
-            <textarea placeholder="Message"></textarea>
+            <input type="text" id="contact-name" placeholder="Name">
+            <input type="email" id="contact-email" placeholder="Email">
+            <input type="text" id="contact-phone" placeholder="Phone">
+            <textarea id="contact-msg" placeholder="Message"></textarea>
 
-            
-
-            <button>SUBMIT</button>
+            <button id="contact-btn">SUBMIT</button>
         </form>
+        <script src="validimiContact.js"></script>
+        
     </div>
 
     <div class="right">

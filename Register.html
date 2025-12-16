@@ -14,23 +14,25 @@
     </div>
 
     <div class="right">
-        <p class="top-text">Already a member? <a href="#">Login</a></p>
+        <p class="top-text">Already a member?  <a href="#" id="login-link">Login</a></p>
 
         <h1>Register</h1>
 
         <form>
-            <input type="text" placeholder="Full Name">
-            <input type="email" placeholder="Email Address">
-            <input type="password" placeholder="Password">
-            <input type="password" placeholder="Confirm Password">
+            <input type="text" id="reg-name" placeholder="Full Name">
+            <input type="email" id="reg-email" placeholder="Email Address">
+            <input type="password" id="reg-pass" placeholder="Password">
+            <input type="password" id="reg-confirm" placeholder="Confirm Password">
 
             <label class="terms">
-                <input type="checkbox">
+                <input type="checkbox" id="reg-terms">
                 I agree to all the statements included in the terms of service
             </label>
-
-            <button>Register</button>
+            <button id="reg-btn">Register</button>
         </form>
+        <script src="registerscript.js"></script>
+        <script src="validimiRegister.js"></script>
+
 
         <div class="divider">Or</div>
 
