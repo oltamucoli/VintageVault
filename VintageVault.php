@@ -63,8 +63,6 @@
 
   <div class="slider-wrapper">
     <button class="arrow" onclick="prevProduct()">&#10094;</button>
-<<<<<<< HEAD:VintageVault.html
-=======
 
     <div class="grid" id="slider">
       <div class="item"><img id="img0"><p id="txt0"></p></div>
@@ -74,57 +72,6 @@
       <div class="item"><img id="img4"><p id="txt4"></p></div>
     </div>
 
-    <button class="arrow" onclick="nextProduct()">&#10095;</button>
-  </div>
-
-<script>
-let index = 0;
-
-const products = [
-  { img: "lamp1.png", text: "Vintage Brass Lamp" },
-  { img: "clock1.jpg", text: "Old Victorian Clock" },
-  { img: "sculpture.png", text: "Bronze Mini Statue" },
-  { img: "chair.png", text: "Classic Antique Chair" },
-  { img: "plateset1.png", text: "Decorative Vintage Plate Set" },
-  { img: "clock2.jpg", text: "Vintage Rope Clock" },
-  { img: "cup.jpg", text: "Vintage Tea Cup" },
-  { img: "phone.jpg", text: "Antique Phone" },
-  { img: "radio.png", text: "Vintage Radio" },
-  { img: "piktura.png", text: "Painting of Yacht in the Bay of Naples" }
-];
-
-function render() {
-  for (let i = 0; i < 5; i++) {
-    let p = products[(index + i) % products.length];
-    document.getElementById("img" + i).src = p.img;
-    document.getElementById("txt" + i).innerText = p.text;
-  }
-}
-
-function nextProduct() {
-  index++;
-  render();
-}
-
-function prevProduct() {
-  index--;
-  if (index < 0) index = products.length - 1;
-  render();
-}
-
-window.onload = render;
-</script>
->>>>>>> abe41bcb5286e3b5b887ae15f1d15f293591fb8f:VintageVault.php
-
-    <div class="grid" id="slider">
-      <div class="item"><img id="img0"><p id="txt0"></p></div>
-      <div class="item"><img id="img1"><p id="txt1"></p></div>
-      <div class="item"><img id="img2"><p id="txt2"></p></div>
-      <div class="item"><img id="img3"><p id="txt3"></p></div>
-      <div class="item"><img id="img4"><p id="txt4"></p></div>
-    </div>
-
-<<<<<<< HEAD:VintageVault.html
     <button class="arrow" onclick="nextProduct()">&#10095;</button>
   </div>
 
@@ -164,8 +111,6 @@ function prevProduct() {
 window.onload = render;
 </script>
 
-=======
->>>>>>> abe41bcb5286e3b5b887ae15f1d15f293591fb8f:VintageVault.php
   </div>
 
 </section>

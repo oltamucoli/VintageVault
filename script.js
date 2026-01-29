@@ -1,3 +1,4 @@
+
 function shkoLogin() {
     var loginLink = document.getElementById('login-link');
     loginLink.style.color = "black";
@@ -9,3 +10,10 @@ function shkoLogin() {
 }
 
 shkoLogin();
+
+
+
+
+
+
+
