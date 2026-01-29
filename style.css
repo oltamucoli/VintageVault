@@ -161,6 +161,31 @@ body {
     width: 100%;
 }
 
+/* SLIDER SECTION */
+.slider-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.products .grid {
+  flex-wrap: nowrap;  
+  overflow: hidden;
+  width: 1000px;
+  scroll-behavior: smooth;
+}
+
+.arrow {
+  font-size: 22px;
+  background: #eee;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
 
 /* BANNER SECTION */
 .our-banner {

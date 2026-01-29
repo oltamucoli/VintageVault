@@ -57,20 +57,66 @@
 
 
     <!-- POPULAR PRODUCTS -->
-    <section class="products">
-        <div class= "title">POPULAR ANTIQUE ITEMS</div>
-        <div class="view">View all</div>
+<section class="products">
+  <div class="title">POPULAR ANTIQUE ITEMS</div>
+  <div class="view">View all</div>
 
-        <div class="grid">
-            <div class="item"><img src="lamp1.png"><p>Vintage Brass Lamp</p></div>
-            <div class="item"><img src="clock1.jpg"><p>Old Victorian Clock</p></div>
-            <div class="item"><img src="sculpture.png"><p>Bronze Mini Statue</p></div>
-            <div class="item"><img src="chair.png"><p>Classic Antique Chair</p></div>
-            <div class="item"><img src="plateset1.png"><p>Decorative Vintage Plate Set</p></div>
-        </div>
-    </section>
+  <div class="slider-wrapper">
+    <button class="arrow" onclick="prevProduct()">&#10094;</button>
+
+    <div class="grid" id="slider">
+      <div class="item"><img id="img0"><p id="txt0"></p></div>
+      <div class="item"><img id="img1"><p id="txt1"></p></div>
+      <div class="item"><img id="img2"><p id="txt2"></p></div>
+      <div class="item"><img id="img3"><p id="txt3"></p></div>
+      <div class="item"><img id="img4"><p id="txt4"></p></div>
+    </div>
+
+    <button class="arrow" onclick="nextProduct()">&#10095;</button>
+  </div>
+
+<script>
+let index = 0;
+
+const products = [
+  { img: "lamp1.png", text: "Vintage Brass Lamp" },
+  { img: "clock1.jpg", text: "Old Victorian Clock" },
+  { img: "sculpture.png", text: "Bronze Mini Statue" },
+  { img: "chair.png", text: "Classic Antique Chair" },
+  { img: "plateset1.png", text: "Decorative Vintage Plate Set" },
+  { img: "clock2.jpg", text: "Vintage Rope Clock" },
+  { img: "cup.jpg", text: "Vintage Tea Cup" },
+  { img: "phone.jpg", text: "Antique Phone" },
+  { img: "radio.png", text: "Vintage Radio" },
+  { img: "piktura.png", text: "Painting of Yacht in the Bay of Naples" }
+];
+
+function render() {
+  for (let i = 0; i < 5; i++) {
+    let p = products[(index + i) % products.length];
+    document.getElementById("img" + i).src = p.img;
+    document.getElementById("txt" + i).innerText = p.text;
+  }
+}
+
+function nextProduct() {
+  index++;
+  render();
+}
+
+function prevProduct() {
+  index--;
+  if (index < 0) index = products.length - 1;
+  render();
+}
+
+window.onload = render;
+</script>
 
 
+  </div>
+
+</section>
     
     <!-- BANNER SECTION -->
     <section class="our-banner">
