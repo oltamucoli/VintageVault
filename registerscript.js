@@ -4,7 +4,7 @@ function shkoLogin() {
 
     loginLink.onclick = function(event) {
         event.preventDefault();
-        window.location.href = "login.html";
+        window.location.href = "LogIn.php";
     };
 }
 

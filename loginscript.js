@@ -4,7 +4,7 @@ function shkoRegister() {
 
     registerLink.onclick = function(event) {
         event.preventDefault();
-        window.location.href = "register.html";
+        window.location.href = "register.php";
     };
 }
 shkoRegister();

@@ -319,3 +319,35 @@ footer {
 .footer-trust a:hover {
     text-decoration: underline;
 }
+@media screen and (max-width: 992px) {
+  .container {
+    flex-direction: column;
+    gap: 40px;
+    margin: 30px;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .info {
+    margin: 40px 0 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  input,
+  textarea,
+  select {
+    font-size: 13px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .info img {
+    max-width: 200px;
+  }
+}
+
