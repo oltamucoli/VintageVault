@@ -96,10 +96,10 @@
     <div class="left">
         <h1> CONTACT US </h1>
         <form>
-            <input type="text" id="contact-name" placeholder="Name">
-            <input type="email" id="contact-email" placeholder="Email">
-            <input type="text" id="contact-phone" placeholder="Phone">
-            <textarea id="contact-msg" placeholder="Message"></textarea>
+            <input type="text" id="contact-name" name="name" placeholder="Name">
+            <input type="email" id="contact-email" name="email" placeholder="Email">
+            <input type="text" id="contact-phone" name="phone" placeholder="Phone">
+            <textarea id="contact-msg" name="message" placeholder="Message"></textarea>
 
             <button id="contact-btn">SUBMIT</button>
         </form>

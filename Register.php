@@ -1,3 +1,28 @@
+<?php
+include_once 'Database.php';
+include_once 'User.php';
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $db = new Database();
+    $connection = $db->getConnection();
+    $user = new User($connection);
+
+    
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    $confirm = $_POST['confirm'];
+
+    if ($user->register($name, $email, $password, $confirm)) {
+        header("Location: LogIn.php"); 
+        exit;
+    } else {
+        echo "Error registering user!";
+    }
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,10 +44,10 @@
         <h1>Register</h1>
 
         <form>
-            <input type="text" id="reg-name" placeholder="Full Name">
-            <input type="email" id="reg-email" placeholder="Email Address">
-            <input type="password" id="reg-pass" placeholder="Password">
-            <input type="password" id="reg-confirm" placeholder="Confirm Password">
+            <input type="text" id="reg-name" name="name" placeholder="Full Name">
+            <input type="email" id="reg-email"  name="email" placeholder="Email Address">
+            <input type="password" id="reg-pass"  name="password" placeholder="Password">
+            <input type="password" id="reg-confirm"  name="confirm" placeholder="Confirm Password">
 
             <label class="terms">
                 <input type="checkbox" id="reg-terms">
