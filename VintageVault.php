@@ -1,3 +1,17 @@
+<?php 
+session_start();
+$hide="";
+if(!isset($_SESSION['Email Address'])){
+    header("location:LogIn.php");
+}else{
+    if($_SESSION['role'] == "admin"){
+        $hide="";
+    }else{
+        $hide="hide";
+    }
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -288,6 +302,13 @@ window.onload = render;
     </div>
 
 </footer>
-
+<?php 
+    
+    echo $_SESSION['username'];
+    
+    ?>
 </body>
 </html>
+<?php
+}
+?>

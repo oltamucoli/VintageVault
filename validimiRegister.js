@@ -49,7 +49,7 @@ function validateRegister(event) {
     }
 
     alert("Registration successful!");
-    window.location.href = "VintageVault.html";
+    window.location.href = "VintageVault.php";
     return true;
 }
 

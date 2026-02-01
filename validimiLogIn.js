@@ -29,7 +29,7 @@ function validateLogin(event) {
     }
 
     alert("Login successful!");
-    window.location.href = "VintageVault.html";
+    window.location.href = "VintageVault.php";
     return true;
 }
 

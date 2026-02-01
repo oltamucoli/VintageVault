@@ -7,7 +7,7 @@ window.onload = function() {
 
         aboutLink.onclick = function(event) {
             event.preventDefault();
-            window.location.href = "AboutUs.html";
+            window.location.href = "AboutUs.php";
         };
     }
 
@@ -17,7 +17,7 @@ window.onload = function() {
 
         homeLink.onclick = function(event) {
             event.preventDefault();
-            window.location.href = "VintageVault.html";
+            window.location.href = "VintageVault.php";
         };
     }
     function shkoCart() {
@@ -26,7 +26,7 @@ window.onload = function() {
 
     cartLink.onclick = function(event) {
         event.preventDefault();
-        window.location.href = "ShoppingCart.html";
+        window.location.href = "ShoppingCart.php";
     };
 }
     shkoAbout();

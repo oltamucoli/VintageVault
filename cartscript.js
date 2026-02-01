@@ -5,7 +5,7 @@ function shkoCart() {
 
     cartLink.onclick = function(event) {
         event.preventDefault();
-        window.location.href = "ShoppingCart.html";
+        window.location.href = "ShoppingCart.php";
     };
 }
 function kthehuHome() {
@@ -15,19 +15,19 @@ function kthehuHome() {
 
     homeLink && homeLink.addEventListener('click', function(event) {
         event.preventDefault();
-        window.location.href = "VintageVault.html";
+        window.location.href = "VintageVault.php";
     });
     homeLink && (homeLink.style.color = "black");
 
     continueLink && continueLink.addEventListener('click', function(event) {
         event.preventDefault();
-        window.location.href = "VintageVault.html";
+        window.location.href = "VintageVault.php";
     });
     continueLink && (continueLink.style.color = "black");
 
     backLink && backLink.addEventListener('click', function(event) {
         event.preventDefault();
-        window.location.href = "VintageVault.html";
+        window.location.href = "VintageVault.php";
     });
     backLink && (backLink.style.color = "black");
 }
@@ -38,7 +38,7 @@ function kthehuHome() {
 
         aboutLink.onclick = function(event) {
             event.preventDefault();
-            window.location.href = "AboutUs.html";
+            window.location.href = "AboutUs.php";
         };
     }
 shkoAbout();

@@ -163,7 +163,6 @@ body {
 
 /* SLIDER SECTION */
 .slider-wrapper {
-<<<<<<< HEAD
  display: flex;
  align-items: center;
  justify-content: center;
@@ -171,14 +170,6 @@ body {
 }
 
 
-=======
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-}
-
->>>>>>> abe41bcb5286e3b5b887ae15f1d15f293591fb8f
 .products .grid {
   flex-wrap: nowrap;  
   overflow: hidden;
