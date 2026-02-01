@@ -1,16 +1,16 @@
 <?php 
 session_start();
-$hide="";
-if(!isset($_SESSION['Email Address'])){
-    header("location:LogIn.php");
-}else{
-    if($_SESSION['role'] == "admin"){
-        $hide="";
-    }else{
-        $hide="hide";
+$hide = "";
+
+if (!isset($_SESSION['email'])) {
+    header("location: LogIn.php");
+    exit();
+} else {
+    if ($_SESSION['role'] == "admin") {
+        $hide = "";
+    } else {
+        $hide = "hide";
     }
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,7 +21,6 @@ if(!isset($_SESSION['Email Address'])){
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- NAVIGATION BAR -->
     <nav class="navbar">
         <div class="logo">
             <img src="2.png" alt="Logo">
@@ -38,16 +37,19 @@ if(!isset($_SESSION['Email Address'])){
         <li><a href="#" id="about">Contact us</a></li>
         <li><a href="#">Favorites</a></li>
         <li><a href="#" id="cart">Shopping cart</a></li>
-        <li><a href="LogIn.php" id="login-link">Log in</a></li>
+        <li>
+            <?php if(isset($_SESSION['email'])): ?>
+                <a href="logout.php" id="logout-link">Log out</a>
+            <?php else: ?>
+                <a href="LogIn.php" id="login-link">Log in</a>
+            <?php endif; ?>
+        </li>
     </ul>
 </nav>
 <script src="script.js"></script>
 <script src="contactscript.js"></script>
 <script src="cartscript.js"></script>
-    
-    
 
-    <!-- ICON CATEGORY ROW -->
     <section class="categories">
         <div>Vases</div>
         <div>Lighting</div>
@@ -58,8 +60,6 @@ if(!isset($_SESSION['Email Address'])){
         <div>Gramophones</div>
     </section>
 
-
-    <!-- HERO SECTION -->
     <section class="hero">
         <div class="hero-text">
             <h3>Timeless Antique Pieces</h3>
@@ -69,8 +69,6 @@ if(!isset($_SESSION['Email Address'])){
         </div>
     </section>
 
-
-    <!-- POPULAR PRODUCTS -->
 <section class="products">
   <div class="title">POPULAR ANTIQUE ITEMS</div>
   <div class="view">View all</div>
@@ -129,7 +127,6 @@ window.onload = render;
 
 </section>
     
-    <!-- BANNER SECTION -->
     <section class="our-banner">
     <div class="banner-content">
         <div class="title">OUR COLLECTIONS</div>
@@ -164,7 +161,6 @@ window.onload = render;
         </div>
     </section>
 
-        <!-- BROWSE SECTION -->
     <header class="site-header">
     <h1>BROWSE VINTAGE VAULT</h1>
   </header>
@@ -242,7 +238,6 @@ window.onload = render;
     </ul>
   </main>
   
-  <!-- FOOTER -->
   <footer>
     <div class="top-icons">
         <div class="icon-box">
@@ -263,7 +258,6 @@ window.onload = render;
             <p>All major credit and debit cards accepted</p>
         </div>
     </div>
-
 
     <div class="footer-content">
 
@@ -303,10 +297,10 @@ window.onload = render;
 
 </footer>
 <?php 
-    
-    echo $_SESSION['username'];
-    
-    ?>
+    if(isset($_SESSION['username'])) {
+        echo '<div class="user-info">Welcome, ' . $_SESSION['username'] . '</div>';
+    }
+?>
 </body>
 </html>
 <?php

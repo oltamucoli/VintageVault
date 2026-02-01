@@ -1,8 +1,10 @@
+document.getElementById('login-btn').addEventListener('click', validateLogin);
 function validateLogin(event) {
     event.preventDefault();
 
     var email = document.getElementById('login-email');
     var pass = document.getElementById('login-pass');
+    var terms = document.getElementById('login-terms').checked;
 
     if (email.value === "") {
         alert("Please add your email.");
@@ -29,9 +31,13 @@ function validateLogin(event) {
     }
 
     alert("Login successful!");
-    window.location.href = "VintageVault.php";
+   window.location.href = "VintageVault.php"; 
+    
     return true;
 }
+
+document.getElementById('login-btn').addEventListener('click', validateLogin);
+
 
 function emailValid(email) {
     var emailRegex = /^([A-Za-z0-9_\-.])+@([A-Za-z0-9_\-.])+\.([A-Za-z]{2,4})$/;
@@ -43,4 +49,6 @@ function passwordValid(password) {
     return passwordRegex.test(password);
 }
 
-document.getElementById('login-btn').addEventListener('click', validateLogin);
+
+
+    
