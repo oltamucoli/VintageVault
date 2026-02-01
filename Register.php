@@ -1,6 +1,10 @@
 <?php
+session_start();
 include_once 'Database.php';
 include_once 'User.php';
+
+$error = "";
+$success = "";
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $db = new Database();
@@ -8,16 +12,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $user = new User($connection);
 
     
-    $name = $_POST['name'];
-    $email = $_POST['email'];
+    $name = trim($_POST['name']);
+    $email = trim($_POST['email']);
     $password = $_POST['password'];
     $confirm = $_POST['confirm'];
 
-    if ($user->register($name, $email, $password, $confirm)) {
-        header("Location: login.php"); 
+    
+    $result = $user->register($name, $email, $password, $confirm);
+    if ($result === true) {
+        
+        header("Location: VintageVault.php");
         exit;
     } else {
-        echo "Error registering user!";
+        $error = $result; 
     }
 }
 ?>
@@ -39,11 +46,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     </div>
 
     <div class="right">
-        <p class="top-text">Already a member?  <a href="#" id="login-link">Login</a></p>
+           <p class="top-text">
+            Already a member? <a href="LogIn.php" id="login-link">Login</a>
+        </p>
 
         <h1>Register</h1>
-
-        <form>
+            <?php
+            if ($error) {
+            echo "<p style='color:red;'>$error</p>";
+            }
+            ?>
+        <form method="POST" action="">
             <input type="text" id="reg-name" name="name" placeholder="Full Name">
             <input type="email" id="reg-email"  name="email" placeholder="Email Address">
             <input type="password" id="reg-pass"  name="password" placeholder="Password">
@@ -55,7 +68,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             </label>
             <button id="reg-btn">Register</button>
         </form>
-        <script src="registerscript.js"></script>
+        
         <script src="validimiRegister.js"></script>
 
 

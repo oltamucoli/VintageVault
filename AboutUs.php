@@ -23,7 +23,7 @@
         <li><a href="#" id="home">Home</a></li>
         <li><a href="#" id="about">Contact us</a></li>
         <li><a href="#">Favorites</a></li>
-        <li><a href="#" id="cart">Shopping cart</a></li>
+        <li><a href="ShoppingCart.php" id="cart">Shopping cart</a></li>
         <li><a href="#">Log in</a></li>
     </ul>
 </nav>

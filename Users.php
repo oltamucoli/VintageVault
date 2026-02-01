@@ -9,7 +9,7 @@ $user1=[
 
 $user2=[
     "Full Name"=>"Olta Mucolli",
-    "email"=>"oltamucolli@hotmail.com",
+    "email"=>"oltamucolli@gmail.com",
     "password"=>"olta123",
     "role"=>"admin"
 ];

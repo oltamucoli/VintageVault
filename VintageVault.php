@@ -1,17 +1,20 @@
-<?php 
+<?php
 session_start();
-$hide = "";
 
-if (!isset($_SESSION['email'])) {
-    header("location: LogIn.php");
-    exit();
-} else {
-    if ($_SESSION['role'] == "admin") {
-        $hide = "";
-    } else {
-        $hide = "hide";
+$hideAdmin = "";
+$hideLogin = "";
+
+if (isset($_SESSION['email'])) {
+    $hideLogin = "hide"; 
+    if ($_SESSION['role'] != "admin") {
+        $hideAdmin = "hide"; 
     }
+} else {
+    $hideLogin = ""; 
+    $hideAdmin = "hide"; 
+}
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,17 +36,12 @@ if (!isset($_SESSION['email'])) {
     </button>
     </div>
         <ul>
-        <li><a href="#" id="home"> Home</a></li>
-        <li><a href="#" id="about">Contact us</a></li>
+        <li><a href="VintageVault.php" id="home"> Home</a></li>
+        <li><a href="AboutUs.php" id="about">Contact us</a></li>
         <li><a href="#">Favorites</a></li>
-        <li><a href="#" id="cart">Shopping cart</a></li>
-        <li>
-            <?php if(isset($_SESSION['email'])): ?>
-                <a href="logout.php" id="logout-link">Log out</a>
-            <?php else: ?>
-                <a href="LogIn.php" id="login-link">Log in</a>
-            <?php endif; ?>
-        </li>
+        <li><a href="ShoppingCart.php" id="cart">Shopping cart</a></li>
+        <li><a href="LogIn.php" class="<?php echo $hideLogin; ?>">Log in</a></li>
+
     </ul>
 </nav>
 <script src="script.js"></script>
@@ -303,6 +301,3 @@ window.onload = render;
 ?>
 </body>
 </html>
-<?php
-}
-?>
