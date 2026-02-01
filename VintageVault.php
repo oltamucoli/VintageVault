@@ -300,4 +300,8 @@ window.onload = render;
     }
 ?>
 </body>
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> 997121d446d40a438f85e6b8d01a523e0d7aace6
