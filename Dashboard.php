@@ -22,8 +22,9 @@
     </div>
 
     <div class="card">
-        <h3>Orders</h3>
-        <p><a href="#">View all orders</a></p>
+        <h3>Manage Messages</h3>
+        <p><a href="#">View all messages</a></p>
+        <p><a href="#">Recent messages</a></p>
     </div>
 
     <p><a href="VintageVault.php">Back to Home</a></p>
