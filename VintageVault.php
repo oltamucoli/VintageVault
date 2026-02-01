@@ -38,7 +38,7 @@ if(!isset($_SESSION['Email Address'])){
         <li><a href="#" id="about">Contact us</a></li>
         <li><a href="#">Favorites</a></li>
         <li><a href="#" id="cart">Shopping cart</a></li>
-        <li><a href="#" id="login-link">Log in</a></li>
+        <li><a href="LogIn.php" id="login-link">Log in</a></li>
     </ul>
 </nav>
 <script src="script.js"></script>

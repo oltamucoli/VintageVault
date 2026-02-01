@@ -112,3 +112,54 @@ button {
     background: rgb(61, 61, 118);
     color: white;
 }
+@media screen and (max-width: 992px) {
+  .wrapper {
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+    padding: 30px;
+  }
+
+  .side-img {
+    width: 50%;
+  }
+
+  .top-text {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .wrapper {
+    margin: 10px;
+    border-radius: 10px;
+  }
+
+  h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  form input {
+    font-size: 14px;
+  }
+
+  .terms {
+    flex-wrap: wrap;
+    white-space: normal;
+    font-size: 13px;
+  }
+
+  .socials {
+    flex-direction: column;
+  }
+
+  .side-img {
+    width: 70%;
+    margin: 20px auto;
+  }
+}
+

@@ -145,3 +145,34 @@ h1 {
 .continue:hover {
     text-decoration: underline;
 }
+@media screen and (max-width: 992px) {
+  .cart-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .cart-right {
+    border-left: none;
+    padding-left: 0;
+    border-top: 1px solid #ddd;
+    padding-top: 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .cart-page {
+    width: 95%;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .row {
+    font-size: 13px;
+  }
+
+  .checkout {
+    font-size: 14px;
+  }
+}
+
