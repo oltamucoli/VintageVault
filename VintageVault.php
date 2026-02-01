@@ -13,7 +13,16 @@ if (isset($_SESSION['email'])) {
     $hideLogin = ""; 
     $hideAdmin = "hide"; 
 }
+
+include_once 'Database.php';
+$db = new Database();
+$conn = $db->getConnection();
+
+
+$query = $conn->query("SELECT * FROM products ORDER BY created_at DESC");
+$products = $query->fetchAll(PDO::FETCH_ASSOC);
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -300,8 +309,4 @@ window.onload = render;
     }
 ?>
 </body>
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> 997121d446d40a438f85e6b8d01a523e0d7aace6

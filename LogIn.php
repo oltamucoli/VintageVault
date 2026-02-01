@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $_SESSION['email'] = $loginUser['email'];
         $_SESSION['role'] = $loginUser['role'];
 
-        
+    
         header("Location: VintageVault.php");
         exit;
     } else {
@@ -44,8 +44,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <p class="top-text">Not a member? <a href="Register.php" id="register-link">Register</a></p>
         <h1>Login</h1>
         <form id="login-form" action="LogIn.php" method="POST">
-    <input type="email" id="login-email" name="user_email" placeholder="Email Address" required>
-    <input type="password" id="login-pass" name="user_pass" placeholder="Password" required>
+    <input type="email" id="login-email" name="email" placeholder="Email Address" required>
+    <input type="password" id="login-pass" name="password" placeholder="Password" required>
 
     <label class="terms">
         <input type="checkbox" id="login-terms" required>
@@ -68,5 +68,3 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <script src="validimiLogIn.js"></script>
 </body>
 </html>
-
-

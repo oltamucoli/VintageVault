@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,14 +12,14 @@
 
     <div class="card">
         <h3>Manage Users</h3>
-        <p><a href="#">View all users</a></p>
-        <p><a href="#">Add new user</a></p>
+        <p><a href="UserDashboard.php">View all users</a></p>
+        <p><a href="addUser.php">Add new user</a></p>
     </div>
 
     <div class="card">
         <h3>Manage Products</h3>
-        <p><a href="#">View all products</a></p>
-        <p><a href="#">Add new product</a></p>
+        <p><a href="ProductDashboard.php">View all products</a></p>
+        <p><a href="addProduct.php">Add new product</a></p>
     </div>
 
     <div class="card">
